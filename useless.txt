@@ -1,0 +1,2 @@
+Just to initiaie the repo.
+Will be deleted at first automatic commit.
