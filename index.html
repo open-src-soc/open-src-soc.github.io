@@ -1,5 +1,42 @@
 <!DOCTYPE html>
 <meta charset="utf-8">
-  <title>Redirecting to https://open-src-soc.org/2023-06</title>
-<meta http-equiv="refresh" content="0; URL=https://open-src-soc.org/2023-06">
+<title>Redirecting to https://riscv-europe.org</title>
+<meta http-equiv="refresh" content="15; URL=https://riscv-europe.org">
+<style>
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+</style>
+<script type="text/javascript">
+  ImageArray = new Array();
+  ImageArray[0] = 'img/Barcelona.002.png';
+  ImageArray[1] = 'img/Barcelona.004.png';
+  ImageArray[2] = 'img/Barcelona.005.png';
+  ImageArray[3] = 'img/Barcelona.006.png';
+
+function getRandomImage() {
+    var num = Math.floor( Math.random() * 4);
+    var img = ImageArray[num];
+    document.getElementById("randImage").innerHTML = ('<img src="' + img + '" class="center">')
+}
+</script>
+
 <link rel="canonical" href="https://open-src-soc.org">
+<body onload="getRandomImage()">
+  <div class="center">
+    <p>(Will redirect to <a href="https://riscv-europe.org">https://riscv-europe.org</a> in 15 sec.)</p>
+    <h3>Welcome to the RISC-V Summit Europe!</h3>
+    <p>The <a href="https://riscv-europe.org">RISC-V Summit Europe</a> in Barcelona is a merger of three European events, joined by <a href="https://riscv.org">RISC-V International</a>:</p>
+    <ul>
+      <li>Red-RISC-V in Spain: <a href="http://red-riscv.org" class="uri">http://red-riscv.org</a></li>
+      <li>RISC-V Week in France. See previous editions at: <a href="https://open-src-soc.org/about-series.html" class="uri">https://open-src-soc.org/2022-05/about-series.html</a></li>
+      <li>Workshop on RISC-V activities in Germany: <a href="https://www.edacentrum.de/en/risc-v" class="uri">https://www.edacentrum.de/en/risc-v</a></li>
+    </ul>
+    <p>Join us in Barcelona for a full week of RISC-V and open source hardware in June 5-9, 2023!</p>
+  </div>
+  <div id="randImage"></div>
+  <!-- <img src="img/Barcelona.002.png" alt="Barcelona" class="center"/> -->
+</body>
